@@ -26,7 +26,7 @@ runs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-    - name: Build debug APK
+    - name: Build Release APK
       run: ./gradlew assembleRelease lintVitalRelease
       shell: bash
     
