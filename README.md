@@ -18,8 +18,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: tytydraco/android-public-build@main
+      - uses: actions/checkout@v4
+      - uses: ViniciusRed/android-public-build@Master
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
 ```
