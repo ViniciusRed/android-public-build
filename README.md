@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: ViniciusRed/android-public-build@Master
+      - uses: ViniciusRed/android-public-build@debug
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
 ```
