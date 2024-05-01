@@ -19,7 +19,7 @@ runs:
         check-latest: true
 
     - name: Build debug APK
-      run: ./gradlew assembleRelease lintVitalRelease
+      run: ./gradlew assembleDebug lintVitalRelease
       shell: bash
     
     - name: Run Local Tests
