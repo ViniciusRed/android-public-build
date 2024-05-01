@@ -16,16 +16,6 @@ runs:
         java-version: '17'
         check-latest: true
 
-    - name: Cache Gradle dependencies
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
     - name: Build Release APK
       run: ./gradlew assembleRelease lintVitalRelease
       shell: bash
